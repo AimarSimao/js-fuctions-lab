@@ -19,14 +19,16 @@ const isAdult = (number) => {
 }
 console.log('Excersie 2 Result:', isAdult(21));
 
-const isCharAVowel = (char) => {
-  if (char == 'a', 'e', 'i', 'o', 'u' ) {
-    return 'true';
-  } else {
-    return 'false';
-  }
+const isCharAVowel= (char) => {
+  // Define a list of vowels
+  const vowels = 'aeiou';
+  // Check if the character is in the list of vowels
+  return vowels.includes(char.toLowerCase());
 }
-console.log('Exercise 3 Result:', isCharAVowel('a'));
+
+// Test the function with the provided example
+console.log('Exercise 3 Result:', isCharAVowel("a"));  // Expected output: true
+
 
 const generateEmail = (person, domain) => {
   return `${person}@${domain}`;
@@ -98,3 +100,11 @@ console.log('Exercise 9 Result:', basicCalculator(10, 5, 'subtract')); // Should
 console.log('Exercise 9 Result:', basicCalculator(10, 5, 'add'));      // Should log: 15
 console.log('Exercise 9 Result:', basicCalculator(10, 5, 'multiply')); // Should log: 50
 console.log('Exercise 9 Result:', basicCalculator(10, 5, 'divide'));   // Should log: 2
+
+console.log('Exercise 3 Result:', isCharAVowel('a'));
+console.log('Exercise 3 Result:', isCharAVowel('z'));
+
+console.log(isCharAVowel)
+
+console.log('sanity check')
+console.log('Exercise 3 result:', isCharAVowel('i'));
